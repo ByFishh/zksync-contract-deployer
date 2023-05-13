@@ -1,0 +1,17 @@
+{
+  "name": "zksync-contract-deployer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ByFishh/zksync-contract-deployer.git",
+  "author": "Théo Maringer <theo.maringer@epitech.eu>",
+  "license": "GNU",
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
+    "@matterlabs/hardhat-zksync-solc": "^0.3.17",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "zksync-web3": "^0.14.3"
+  }
+}
