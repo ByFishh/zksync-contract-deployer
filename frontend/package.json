@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@web3modal/ethereum": "^2.4.1",
+    "@web3modal/react": "^2.4.1",
     "ethers": "5",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "viem": "^0.3.26",
+    "wagmi": "^1.0.5",
     "zksync-web3": "^0.14.3"
   },
   "devDependencies": {
