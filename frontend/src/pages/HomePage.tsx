@@ -1,15 +1,12 @@
 import TokenLayout from '../layout/TokenLayout.tsx';
 import GreeterLayout from '../layout/GreeterLayout.tsx';
 import { useState } from 'react';
-import { Web3Button } from '@web3modal/react';
 
 const HomePage = () => {
-  const [contract, setContract] = useState<string>();
+  const [contract, setContract] = useState<string>('token');
+
   return (
     <>
-      <div className="absolute top-5 right-5">
-        <Web3Button balance="show" avatar="hide" icon="hide" />
-      </div>
       <div className="grid mt-20 place-items-center">
         <div className="grid place-items-center">
           <h1 className="font-bold text-6xl text-white mb-10">Contract deployer</h1>
