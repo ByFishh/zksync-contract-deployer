@@ -23,32 +23,36 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    defaults:
-      run:
-        working-directory: ./frontend
     environment:
       name: github-pages
       url: https://byfishh.github.io/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        working-directory: ./frontend
         uses: actions/checkout@v3
       - name: Set up Node
+        working-directory: ./frontend
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'npm'
       - name: Install dependencies
+        working-directory: ./frontend
         run: npm install
       - name: Build
+        working-directory: ./frontend
         run: npm run build
       - name: Setup Pages
+        working-directory: ./frontend
         uses: actions/configure-pages@v3
       - name: Upload artifact
+        working-directory: ./frontend
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
           path: './dist'
       - name: Deploy to GitHub Pages
+        working-directory: ./frontend
         id: deployment
         uses: actions/deploy-pages@v1
