@@ -35,7 +35,7 @@ const GreeterLayout = () => {
   return (
     <div className="grid place-items-center">
       <h1 className="font-bold text-4xl text-white mb-2">Greeter</h1>
-      <h1 className="text-xl text-white mb-8">~4$ fees</h1>
+      <h1 className="text-xl text-white mb-8">~2$ fees</h1>
       <div className="grid place-items-center">
         <div className="mb-6 w-80">
           <label htmlFor="" className="block mb-2 text-sm font-normal text-white">

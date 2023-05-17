@@ -27,9 +27,6 @@ jobs:
       name: github-pages
       url: https://byfishh.github.io/
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - name: Checkout
         uses: actions/checkout@v3
