@@ -3,7 +3,7 @@ import GreeterLayout from '../layout/GreeterLayout.tsx';
 import { useState } from 'react';
 
 const HomePage = () => {
-  const [contract, setContract] = useState<string>('token');
+  const [contract, setContract] = useState<string>('greeter');
 
   return (
     <>
